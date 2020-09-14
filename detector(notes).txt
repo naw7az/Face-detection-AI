@@ -1,0 +1,31 @@
+1. Major Steps in this project:
+   Step 1: Get A Crap-Load of Faces(for test inputs)
+   Step 2: Make them all Black and White(the algorithm need structure of face not colour)
+   Step 3: Train Algorithm to detect Grayscale Faces
+   Step 4: Then give the algorithm a colour image.
+
+2. Installing Virtual environment:
+   1. go to folder where you wanna install venv using cmd
+   2. write 'python -m venv detect(this is name of folder)'
+   3. To activate: 'detect(folder name)\Scripts\activate.bat'
+   4. To deactivate: 'deactivate'
+
+3. To install openCV(with numpy): 'pip3 install opencv-python'
+   To check all the modules present in venv: 'pip freeze'
+
+4. Explaination:
+   a. We are using Haarcascade(Haar is the inventor) algorithm to detect faces, it is not very accurate
+      but it's fast. And the algorithm is cascading hence the name.
+      Here cascading means the algorithm uses square(haar features) of every size to every place of the image and see the 
+      best location and the size of square within which there is a face.
+      Read about: Haar Features(aka rudimentary building blocks)
+
+   b. This haar features see the relation between different of the faces in terms of white and black blocks
+      and recognises a face. That's why we need a Grayscale image. 
+   
+   c. For more info go to youtube and type: Haar Cascade Visualization(4mins)
+
+5. What you can do:
+   a. Combine frontal face detection with side 
+   b. Use a flask app to deploy it in a website
+   c. distinguish 1 particular face image from the rest(ex: rdj)
